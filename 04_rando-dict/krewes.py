@@ -1,14 +1,17 @@
 # Eva Black
 # TummyAKE
 # SoftDev
+# Python Dictionaries and Random Selection
+# Writing a function to randomly select a student from a dictionary where the keys are periods and the values are rosters.
+
 # 2024-09-13
-# Time: 10:50
+# Time: 10 minutes
 
 import random
 
 def func(krewes):
     x = random.randrange(0, len(krewes))
-    pd = krewes.keys()[x]
+    pd = list(krewes.keys())[x]
     students = krewes[pd]
     x = random.randrange(0, len(students))
     student = students[x]
