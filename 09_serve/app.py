@@ -36,8 +36,9 @@ def printRand():
             splitted[0] = splitted[0].replace('"', "") # Remove quotes if present
             occupation[splitted[0]] = splitted[1] # Add to dictionary
             weights.append(float(splitted[1])) # Append weight value to weight list
-
-        randO = random.choices(list(occupation), weights, k=1)
+            
+        print(weights)
+        randO = random.choices(list(occupation), weights = weights, k=1)
 
         # fstring to make things look nicer and clean up code, double braces are for fstring formatting
         return f"""
